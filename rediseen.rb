@@ -2,7 +2,7 @@ class Rediseen < Formula
   desc "Start REST API service for Redis without writing a single line of code"
   homepage "https://github.com/XD-DENG/rediseen"
   url "https://github.com/XD-DENG/rediseen/archive/1.0.2.tar.gz"
-  sha256 "cf8c7629a5f9f758851364c2f2ea422006552a517ad881749b0870750bf130b3"
+  sha256 "5ba62edfed2a0aa8221f09800fb16d65bb51aeb38b544951eb16e83afad6239f"
 
   head do
     url "https://github.com/XD-DENG/rediseen.git"

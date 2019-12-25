@@ -1,8 +1,8 @@
 class Rediseen < Formula
   desc "Start REST API service for Redis without writing a single line of code"
   homepage "https://github.com/XD-DENG/rediseen"
-  url "https://github.com/XD-DENG/rediseen/archive/1.4.1.tar.gz"
-  sha256 "af06194f93cabb6c237724a304f126f1006fd24ead2a9e50ea109de7d532b22a"
+  url "https://github.com/XD-DENG/rediseen/archive/2.0.0.tar.gz"
+  sha256 "ff2da49c216a21320be10fab370b7f37c495a2d748ef25157149633ad4cf7c7c"
 
   head do
     url "https://github.com/XD-DENG/rediseen.git"
@@ -14,7 +14,7 @@ class Rediseen < Formula
   end
 
   test do
-    assert_match "1.4.1", shell_output("#{bin}/#{name} version").strip
+    assert_match "2.0.0", shell_output("#{bin}/#{name} version").strip
     assert_match "[ERROR] No valid Redis URI is provided",
                  shell_output("#{bin}/#{name} start")
     assert_match "REDISEEN_DB_EXPOSED is not configured",
